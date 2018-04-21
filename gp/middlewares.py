@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
-
-import time
-
-from scrapy.http import HtmlResponse
 # Define here the models for your spider middleware
 #
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/spider-middleware.html
+from scrapy.http import HtmlResponse
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from gp.configs import *
