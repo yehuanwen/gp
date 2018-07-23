@@ -164,7 +164,7 @@ class GooglePlaySpider(scrapy.Spider):
             featured_review = response.xpath('//div[@jscontroller="H6eOGe"]')
             reviews = []
             for featured in featured_review:
-                avatar_url = featured.xpath('div/div[1]/img[@class="T75of oRT0Bc"]/@src')[
+                avatar_url = featured.xpath('div/div[1]/img[@class="T75of ZqMJr"]/@src')[
                     0].extract()
 
                 user_name = featured.xpath('div/div[2]/div[1]/div[1]/span/text()')[0].extract().strip()
